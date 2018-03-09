@@ -1,0 +1,19 @@
+{
+  "name": "terra-registry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terra-claims/terra-registry.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/terra-claims/terra-registry/issues"
+  },
+  "homepage": "https://github.com/terra-claims/terra-registry#readme"
+}
