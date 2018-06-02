@@ -1,4 +1,10 @@
+const TestRPC = require("ganache-cli");
+
 module.exports = {
-  // See <http://truffleframework.com/docs/advanced/configuration>
-  // to customize your Truffle configuration!
+  networks: {
+    development: {
+      provider: TestRPC.provider({port: 7545}),
+      network_id: "*" // Match any network id
+    }
+  }
 };
