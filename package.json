@@ -1,9 +1,11 @@
 {
   "name": "terra-registry",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An ERC 721 compatible Non Fungible Token Geographica Claims Registry",
+  "main": "build/contracts/TerraRegistry.json",
   "scripts": {
+    "test": "./node_modules/.bin/truffle test",
+    "lint": "./node_modules/.bin/solhint contracts/TerraRegistry.sol",
     "compile": "./node_modules/.bin/truffle compile",
     "_deploy": "./node_modules/.bin/truffle migrate --network ",
     "deploy-mainnet": "npm run _deploy mainnet",
@@ -21,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/terra-claims/terra-registry/issues"
   },
-  "homepage": "https://github.com/terra-claims/terra-registry#readme"
+  "homepage": "https://github.com/terra-claims/terra-registry#readme",
+  "devDependencies": {
+    "ganache-cli": "^6.1.0",
+    "solhint": "^1.2.1",
+    "solium": "^1.1.7",
+    "truffle": "^4.1.11"
+  }
 }
